@@ -1,16 +1,16 @@
-import { defineMongooseModel } from '#nuxt/mongoose'
+import { defineMongooseModel } from "#nuxt/mongoose";
 
 export const UserSchema = defineMongooseModel({
-  name: 'User',
+  name: "User",
   schema: {
     name: {
-      type: 'string',
+      type: "string",
       required: true,
     },
     slug: {
-      type: 'string',
+      type: "string",
       required: true,
       unique: true,
     },
   },
-})
+});

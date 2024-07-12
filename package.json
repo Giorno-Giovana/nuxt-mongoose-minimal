@@ -1,17 +1,23 @@
 {
   "name": "nuxt-app",
   "private": true,
+  "type": "module",
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
+    "postinstall": "nuxt prepare",
+    "test": "vitest"
   },
   "devDependencies": {
     "@nuxt/devtools": "1.0.0",
     "@nuxt/devtools-ui-kit": "^1.0.0",
+    "@nuxt/test-utils": "^3.13.1",
+    "happy-dom": "^14.12.3",
     "nuxt": "^3.7.4",
-    "nuxt-mongoose": "^1.0.2"
-  }
+    "nuxt-mongoose": "^1.0.2",
+    "vitest": "^2.0.2"
+  },
+  "packageManager": "pnpm@8.6.1+sha512.3f9e23f20bdbf7a27b87b804383f1dafdb5cb35cdc40fce590aff2215255446ff595878ee4f33429e6a0e7c3882b1ae926514f6fea6a5ba75e52f87bfc2592e7"
 }
